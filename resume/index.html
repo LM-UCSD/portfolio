@@ -4,75 +4,87 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resume</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../style.css">
 </head>
-<body>
-    <h1> Resume</h1>
-    <section>
-        <h2>Education</h2>
-        <article>
-            <h3>University of California San Diego</h3>
-            <p>Masters of Data Science (Online)<br>
-                <time>2023</time> to <time>present</time>
-            </p>
-        </article>
-        <article>
-            <h3>Georgia Institute of Technology (Georgia Tech)</h3>
-            <p>B.S. Chemical & Biomolecular Engineering<br>
-                Minor in French Language<br>
-                <time>2012</time> to <time>2017</time></p>
-        </article>
-    </section>
-    <section>
-        <h2>Work History</h2>
-        <article>
-            <p>
-                <h3>Los Alamos National Laboratory</h3>
-                Facility Engineer<br>
-                <time>2022</time> to <time>present</time><br>
-                <ul>
-                    <li>Maintain facility equipment</li>
-                    <li>Review engineering drawings and designs</li>
-                    <li>Develop technical documentation</li>
-                </ul> 
-            </p>
-        </article>
-        <article>
-            <p>
-                <h3>Corning, Inc.</h3>
-                Manufacturing Process Engineer<br>
-                <time>2018</time> to <time>2022</time><br>
-                <ul>
-                    <li>Developed Tableau and PI Vision dashboards for live process monitoring</li>
-                    <li>Restructured equipment preventative maintenance</li>
-                    <li>Drove continuous improvement via Statistical Process Control charts.</li>
-                    <li>Supported equipment troubleshooting and maintenance</li>
-                </ul> 
-            </p>
-        </article>
-    </section>
-    <section>
-        <h2>Skills</h2>
-        <article>
-            <h3>Programming & Software</h3>
-            <li>Python</li>
-            <li>Matlab</li>
-            <li>Tableau</li>
-            <li>OSIsoft PI System</li>
-        </article>
-        <article>
-            <h3>Languages</h3>
-            <li>English (native)</li>
-            <li>French (proficient)</li>
-        </article>
-    </section>
- 
-</body>
-<br><br>
 <nav>
-    <a href="../index.html">Home</a> |
-    <a href="index.html">Resume</a> |
-    <a href="../projects\index.html">Projects</a> |
+    <a href="../index.html">Home</a>
+    <a class="current" href="index.html">Resume</a>
+    <a href="../projects\index.html">Projects</a>
     <a href="../contact\index.html">Contact</a>
 </nav> 
+<body>
+    <h1> Resume</h1>
+    <section class="edu">
+        <h2>Education</h2>
+        <div class="edu-articles"> <!-- New wrapper for articles -->
+            <article class="edu-2">
+                <h3>University of California San Diego</h3>
+                <p>Masters of Data Science (Online)<br>
+                    <time>2023</time> to <time>present</time>
+                </p>
+            </article>
+            <article class="edu-1">
+                <h3>Georgia Institute of Technology (Georgia Tech)</h3>
+                <p>B.S. Chemical & Biomolecular Engineering<br>
+                    Minor in French Language<br>
+                    <time>2012</time> to <time>2017</time></p>
+            </article>
+        </div>
+    </section>
+    <br>
+    <section class="work">
+        <h2>Work History</h2>
+        <div class="work-articles">
+            <article class="work-now">
+                <p>
+                    <h3>Los Alamos National Laboratory</h3>
+                    Facility Engineer<br>
+                    <time>2022</time> to <time>present</time><br>
+                    <ul>
+                        <li>Maintain facility equipment</li>
+                        <li>Review engineering drawings and designs</li>
+                        <li>Develop technical documentation</li>
+                    </ul> 
+                </p>
+            </article>
+            <article class="work-then">
+                <p>
+                    <h3>Corning, Inc.</h3>
+                    Manufacturing Process Engineer<br>
+                    <time>2018</time> to <time>2022</time><br>
+                    <ul>
+                        <li>Developed Tableau and PI Vision dashboards for live process monitoring</li>
+                        <li>Restructured equipment preventative maintenance</li>
+                        <li>Drove continuous improvement via Statistical Process Control charts.</li>
+                        <li>Supported equipment troubleshooting and maintenance</li>
+                    </ul> 
+                </p>
+            </article>
+        </div>
+    </section>
+    <br>
+    <section class="skills">
+        <h2>Skills</h2>
+        <div class="skills-articles">
+            <article class="prog">
+                <h3>Programming & Software</h3>
+                <ul>
+                    <li>Python</li>
+                    <li>Matlab</li>
+                    <li>Tableau</li>
+                    <li>OSIsoft PI System</li>
+                </ul>
+            </article>
+            <article class="lang">
+                <h3>Languages</h3>
+                <ul>
+                    <li>English (native)</li>
+                    <li>French (proficient)</li>
+                </ul>
+            </article>
+        </div>
+    </section>
+    
+    </section>
+</body>
 </html>
